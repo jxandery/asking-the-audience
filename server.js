@@ -1,6 +1,8 @@
-const http    = require('http');
-const express = require('express');
-const app     = express();
+const http        = require('http');
+const express     = require('express');
+const app         = express();
+const socketIo    = require('socket.io');
+const io          = socketIo(server);
 
 app.use(express.static('public'));
 
